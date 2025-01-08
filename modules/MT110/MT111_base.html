@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MT111 Base Lab</title>
+</head>
+
+<!-- START PRE -->
+<link rel="stylesheet" href="../../web_support/strapdown/v/0.2/fonts/ubuntu-regular-woff.css"/>
+<link rel="stylesheet" href="../../web_support/strapdown/v/0.2/fonts/glyphicons-halflings-regular.css"/>
+
+<link rel="stylesheet" href="../../web_support/strapdown/v/0.2/themes/united2.min.css"/>
+<link rel="stylesheet" href="../../web_support/strapdown/v/0.2/themes/bootstrap-responsive.min.css"/>
+<link rel="stylesheet" href="../../web_support/strapdown/v/0.2/strapdown.css"/>
+<link rel="shortcut icon" type="image/x-icon" href="../../.metadata/labicon.ico" />
+<!-- END PRE -->
+
+<xmp style="display:none;" class="col-xs-6">
+
+Introduction
+==================================
+The focus of this lab is to set up and generate the Gcode for the base of the
+arbor press as well as preparing the CNC mill and fully machining the base.
+
+This lab will cover the following topics:
+- CAM setup.
+- CAM operations such as drilling, face, 2d and 3d operations.
+- Tool selection and creation in fusion 360.
+- Generation of NC program and setup sheet.
+- Loading tools into the CNC mill
+- Setting tool lengths in the CNC mill
+- Setting up the stock material based on the CAM setup
+- Configuring work offsets and coordinate system.
+- Soft jaws.
+
+
+
+1 - Base OP1
+==================================
+Given the geometry of the base, it will be necessary to have multiple programs
+in order to finish the part since we cannot machine both the top and the bottom
+of the piece in one operation. 
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+
+|| CAM ||
+### Measuring the Stock Material
+
+[[y! Stock Material
+
+Make sure you have a set of **calipers** and the **stock** material that will be 
+used for this lab.
+
+]]
+Using the calipers, measure the width, height, and thickness of the stock 
+material and write the dimensions down.
+
+OP1 Setup
+-----------------------------
+
+This section focuses on creating a new setup for OP1 and all the 
+necessary CAM operations for the base in Fusion 360.
+To get started, open the arbor press project in fusion 360.
+Under the **Manufacture** workspace, go to Models->ArborPress, and right click
+on the base select isolate.
+ADD PICTURES
+Create a new setup by clicking the setup button under the Milling menu.
+ ADD PICTURE OF BUTTON
+
+
+ ### a. Creating the tools for OP1
+
+ ### b. Facing the stock material
+ 
+ ### c. Drilling and boring
+ 
+ ### d. Adaptive operation
+ 
+ ### e. Finishing pass and chamfering using 2d contour
+ 
+ ### f. Tapping
+ 
+ Generating the NC program and setup sheet for OP1
+ -----------------------------
+ plug in a flashdrive
+ go to postprocess 
+ select profile
+ change max feedrate?
+ under commend add your Name
+ output directory select your flashdrive
+ name the program a number between "1" and "9999"
+ click post
+ now your program should be saved to the flashdrive.
+ 
+
+|| MILL ||
+[[y! Prerequisites
+
+The following prerequisites are required for this section of the lab: 
+- Tool length offsets are expected to be already set up in the machine previous
+to starting this section.
+For more information about setting tool length offsets go to Lab 1. 
+
+]]
+
+- Loading the stock material in the vise.
+- Setting up the WCS(for step by step instructions go to Lab 1)
+- load the program for OP1 generated in previous section
+- start the program. and set up the speed to 25% while keeping your finger 
+on the stop feed button in case something goes wrong.
+- press feed stop when you observe the first tool about 1 inch above the stock.
+ double check in the screen that the Z position is about 1 inch away from the 
+ stock material. If the numbers don't match with what you are seeing, stop and 
+ double check your work.
+- change speed% accordingly while carefully monitoring all the operations.
+always be ready to press the stop feed button if something goes wrong.
+- wait for the machine to finish.
+- Once OP1 has completed, remove the part and continue with the next section. 
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+
+
+2 - Soft Jaws
+==================================
+[[b! Soft Jaws
+
+Soft jaws are vise jaws often machined out of aluminum or steel. 
+Their purpose is to fixture parts that are oddly shaped and cannot be easily
+held by the flat jaws of a vise.
+
+]]
+
+To continue with the second and final operation needed to complete the base, 
+soft jaws will be needed.
+Soft
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+|| CAD ||
+
+|| CAM ||
+
+Setup
+-----------------------------
+
+This section focuses on creating a new setup for OP1 and all the 
+necessary CAM operations for the base in Fusion 360.
+To get started, open the arbor press project in fusion 360.
+Under the **Manufacture** workspace, go to Models->ArborPress, and right click
+on the base select isolate.
+Create a new setup by clicking the setup button under the Milling menu.
+
+
+
+ ### a. Creating the tools for OP1
+
+ ### b. Facing the stock material
+ 
+ ### c. Drilling and boring
+ 
+ ### d. Adaptive operation
+ 
+ ### e. Finishing pass and chamfering using 2d contour
+ 
+ ### f. Tapping
+ 
+ Generating the NC program and setup sheet for OP1
+ -----------------------------
+ plug in a flashdrive
+ go to postprocess 
+ select profile
+ change max feedrate?
+ under commend add your Name
+ output directory select your flashdrive
+ name the program a number between "1" and "9999"
+ click post
+ now your program should be saved to the flashdrive.
+ 
+
+|| MILL ||
+[[y! Prerequisites
+
+The following prerequisites are required for this section of the lab: 
+- Tool length offsets are expected to be already set up in the machine previous
+to starting this section.
+For more information about setting tool length offsets go to Lab 1. 
+
+]]
+
+- Loading the stock material in the vise.
+- Setting up the WCS(for step by step instructions go to Lab 1)
+- load the program for OP1 generated in previous section
+- start the program. and set the speed to 25% while keeping your finger 
+on the stop feed button in case something goes wrong.
+- press feed stop when you observe the first tool about 1 inch above the stock.
+ double check in the screen that the Z position is about 1 inch away from the 
+ stock material. If the numbers don't match with what you are seeing, stop and 
+ double check your work.
+- change speed% accordingly while carefully monitoring all the operations.
+always be ready to press the stop feed button if something goes wrong.
+- wait for the machine to finish.
+- Once OP1 has completed, remove the part and continue with the next section. 
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+
+3 - Base OP2
+==================================
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+
+|| CAM ||
+### Measuring the Stock Material
+
+[[y! Stock Material
+
+Make sure you have a set of **calipers** and the **stock** material that will be 
+used for this lab.
+
+]]
+Using the calipers, measure the width, height, and thickness of the stock 
+material and write the dimensions down.
+
+OP1 Setup
+-----------------------------
+
+This section focuses on creating a new setup for OP1 and all the 
+necessary CAM operations for the base in Fusion 360.
+To get started, open the arbor press project in fusion 360.
+Under the **Manufacture** workspace, go to Models->ArborPress, and right click
+on the base select isolate.
+
+Create a new setup by clicking the setup button under the Milling menu.
+
+
+
+ ### a. Creating the tools for OP1
+
+ ### b. Facing the stock material
+ 
+ ### c. Drilling and boring
+ 
+ ### d. Adaptive operation
+ 
+ ### e. Finishing pass and chamfering using 2d contour
+ 
+ ### f. Tapping
+ 
+ Generating the NC program and setup sheet for OP1
+ -----------------------------
+ plug in a flashdrive
+ go to postprocess 
+ select profile
+ change max feedrate?
+ under commend add your Name
+ output directory select your flashdrive
+ name the program a number between "1" and "9999"
+ click post
+ now your program should be saved to the flashdrive.
+ 
+
+|| MILL ||
+[[y! Prerequisites
+
+The following prerequisites are required for this section of the lab: 
+- Tool length offsets are expected to be already set up in the machine previous
+to starting this section.
+For more information about setting tool length offsets go to Lab 1. 
+
+]]
+
+- Loading the stock material in the vise.
+- Setting up the WCS(for step by step instructions go to Lab 1)
+- load the program for OP1 generated in previous section
+- start the program. and setu up the speed to 25% while keeping your finger 
+on the stop feed button in case something goes wrong.
+- press feed stop when you observe the first tool about 1 inch above the stock.
+ double check in the screen that the Z position is about 1 inch away from the 
+ stock material. If the numbers dont match with what you are sseeing, stop and 
+ double check your work.
+- change speed% accordingly while carefully monitoring all the operations.
+always be ready to press the stop feed button if something goes wrong.
+- wait for the machine to finish.
+- Once OP1 has completed, remove the part and continue with the next section. 
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+</xmp>
+
+
+
+
+<link rel="stylesheet" href="../../web_support/highlight/styles/zenburn.css"/>
+<script src="../../web_support/strapdown/vendor/jquery-1.11.2.min.js"></script>
+<script src="../../web_support/strapdown/vendor/bootstrap.min.js"></script>
+<script src="../../web_support/highlight/highlight.pack.js"></script>
+<script src="../../web_support/strapdown/v/0.2/strapdown.js"></script>
+
+
+</html>

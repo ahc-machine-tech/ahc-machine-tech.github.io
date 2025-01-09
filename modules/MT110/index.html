@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Open Sans', sans-serif; /* Modern font */
-            margin: 0;
+            margin: 200;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -86,6 +86,32 @@
         }
 
         /* Optional: Subtle gradient for header */
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2; 
+        }
+
+        a {
+            color: #004988; /* Dark Blue */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
        
     </style>
 </head>
@@ -123,7 +149,41 @@
                 By the end of the course, students will be able to <strong>identify and select appropriate CNC cutting tools, set CNC work offsets, tool offsets, and cutter compensation</strong> 
                 and create CNC part programs to operate a variety of machine tools.</p>
 
+                <h2>Course Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Projects</th>
+                        <th>Labs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Dice</td>
+                        <td><a href="MT110_dice.html">Lecture 1</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="lecture2.html">Lecture 2</a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Top</td>
+                        <td><a href="lecture3.html">Lecture 3</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="lecture3.html">Lecture 3</a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Wallet</td>
+                        <td><a href="lecture3.html">Lecture 3</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="lecture3.html">Lecture 3</a></td>
+                    </tr>
+                    </tbody>
+            </table>
+
         </section>
+        
         
     </main>
 
